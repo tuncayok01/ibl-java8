@@ -10,6 +10,7 @@
 </h1>
 
 <a href="<c:url value='/' />">home</a>
+<a href="<c:url value='/spring/greeting' />">greeting</a>
 <a href="<c:url value='/spring/hello/Tuncay' />">hello</a>
 </body>
 </html>
