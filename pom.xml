@@ -127,6 +127,23 @@
                 </configuration>
             </plugin>
 
+            <plugin>
+                <groupId>org.jsondoc</groupId>
+                <artifactId>jsondoc-maven-plugin</artifactId>
+                <version>1.2.10</version>
+                <configuration>
+                    <version>1.1</version>
+                    <basePath>http://localhost:8080/spring</basePath>
+                    <packages>
+                        <package>uk.co.bbc</package>
+                    </packages>
+                    <outputFile>src/main/webapp/jsondoc.json</outputFile>
+                    <scanner>org.jsondoc.springmvc.scanner.Spring4JSONDocScanner</scanner>
+                    <playgroundEnabled>true</playgroundEnabled> <!-- optional -->
+                    <displayMethodAs>URI</displayMethodAs> <!-- optional -->
+                </configuration>
+            </plugin>
+
 
         </plugins>
     </build>
